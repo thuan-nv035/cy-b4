@@ -1,29 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 100px 300px ;
-    grid-template-rows: 100px 100px 100px;
-    row-gap: 20px;
-    column-gap: 30px;
-    justify-content: center;
-    width: 500px;
-    height: 500px;
-    background: #ccc;
-    padding-top: 50px;
+body {
+  font-family: "Unica One", cursive;
 }
 
-.grid-1 {
-    background-color: red;
-    color: #fff;
-    text-align: center;
+.logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.list-menu a {
+    text-decoration: none;
     font-size: 20px;
-    padding-top: 40px;
 }
 
-.grid-2 {
-    background: blue;
+.group-button .btn {
+    font-size: 24px;
 }
+
+.info {
+    position: relative;
+    z-index: 1000;
+}
+
+.visual-box {
+    position: relative;
+    z-index: 10;
+}
+
+.info .options .sizes button {
+    border: 1px solid #ebebeb;
+}
+
+.info .options .colors button {
+    border-radius: 50%;
+    height: 26px;
+}
+
+.info .options .colors button.btn-cl-brown {
+    background-color: brown;
+}
+
+.info .options .colors button.btn-cl-black {
+    background-color: black;
+}
+
+.info .options .colors button.btn-cl-blue {
+    background-color: blue;
+}
+
+.info .options .colors button.btn-cl-yellow {
+    background-color: yellow;
+}
+
+.bottom .ic-play {
+    border-radius: 50%;
+    background: lightgray;
+    width: 40px;
+    height: 40px;
+}
+
+.ovfl-hidden {
+    overflow: hidden;
+}
+
+.main-view {
+    height: 50vh;
+    margin-top: -20px;
+}
+
+.main-view img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.btn-remind {
+    transform: translateY(-50%) rotate(-90deg);
+}
+@media (max-width: 575px) {
+    .list-menu {
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+    }
+}
+

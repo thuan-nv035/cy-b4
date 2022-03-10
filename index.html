@@ -1,20 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <div class="grid-container">
-        <div class="grid-1">1</div>
-        <div class="grid-2"></div>
-        <div class="grid-1">2</div>
-        <div class="grid-2"></div>
-        <div class="grid-1">3</div>
-        <div class="grid-2"></div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-3 align-items-center">
+        <div class="col col-6 order-1 col-sm-3">
+          <h1 class="logo m-0">Happenstance</h1>
+        </div>
+        <div class="col col-12 order-3 order-sm-2 col-sm-6">
+          <div
+            class="list-menu flex-wrap d-flex align-items-center justify-content-between"
+          >
+            <a class="text-uppercase d-inline-block p-2 text-dark" href=""
+              >New releases</a
+            >
+            <a class="text-uppercase d-inline-block p-2 text-dark" href=""
+              >Men</a
+            >
+            <a class="text-uppercase d-inline-block p-2 text-dark" href=""
+              >Women</a
+            >
+            <a class="text-uppercase d-inline-block p-2 text-dark" href=""
+              >Haps stories</a
+            >
+          </div>
+        </div>
+        <div class="col col-6 order-2 order-sm-3 col-sm-3">
+          <div class="group-button text-end">
+            <button class="btn btn-acount">
+              <i class="fa fa-user-circle"></i>
+            </button>
+            <button type="button" class="btn  position-relative">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                5
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="info mt-5 pt-5">
+        <div class="row">
+          <div class="col-12 col-sm-8 options">
+            <p class="text-uppercase">Select size (us)</p>
+            <div class="sizes">
+              <button class="btn btn-size">8</button>
+              <button class="btn btn-size">8.5</button>
+              <button class="btn btn-size">9</button>
+              <button class="btn btn-size">9.5</button>
+              <button class="btn btn-size">10</button>
+            </div>
+
+            <p class="text-uppercase mt-5">Select color</p>
+            <div class="colors">
+              <button class="m-1 btn btn-cl-brown"></button>
+              <button class="m-1 btn btn-cl-black"></button>
+              <button class="m-1 btn btn-cl-blue"></button>
+              <button class="m-1 btn btn-cl-yellow"></button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="text-box">
+              <h5>Men's sandals</h5>
+              <h3>Hunk - toffee</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+                id.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-end visual-box">
+        <div class="col col-sm-2">
+          <button class="btn btn-remind text-uppercase align-items-sm-start">
+            Scroll down
+          </button>
+        </div>
+        <div class="col col-sm-8">
+          <div
+            class="main-view d-flex align-items-center justify-content-center ovfl-hidden"
+          >
+            <img src="./assets/img/Hero.png" alt="dep" />
+          </div>
+        </div>
+        <div class="col col-sm-2 d-flex flex-column align-items-end">
+          <a class="btn btn-social" href=""><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-social" href=""><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-social" href=""><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="mt-5 row bottom align-items-center">
+        <div class="col-12 col-sm-4 text-center">
+          <button class="btn text-center">
+            <span class="d-block text-uppercase">Prev</span>
+            <i class="d-block fa fa-arrow-left"></i>
+          </button>
+          <button class="ms-4 btn text-center">
+            <span class="d-block text-uppercase">Next</span>
+            <i class="d-block fa fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="col-12 col-sm-4 text-center">
+          <button class="btn btn-play text-uppercase align-items-center">
+            <span
+              class="ic-play me-3 d-inline-flex align-items-center justify-content-center"
+            >
+              <i class="text-muted fa fa-play"></i>
+            </span>
+            Play video
+          </button>
+        </div>
+        <div class="col-12 col-sm-4 text-center">
+          <button class="btn btn-add-cart">
+            Add to cart
+            <span>$4534</span>
+          </button>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
