@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 300px ;
+    grid-template-rows: 100px 100px 100px;
+    row-gap: 20px;
+    column-gap: 30px;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background: #ccc;
+    padding-top: 50px;
+}
+
+.grid-1 {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.grid-2 {
+    background: blue;
+}
